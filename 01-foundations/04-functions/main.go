@@ -73,7 +73,7 @@ func main() {
 	fmt.Println("sum(slice...):", sum(xs...))
 
 	next := counter()
-	fmt.Println("counter:", next(), next(), next()) // 1 2 3
+	fmt.Println("counter:", next(), next(), next(), next()) // 1 2 3
 
 	// --- defer ---
 	// Deferred calls run in LIFO order when the function returns. Classic use:

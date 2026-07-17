@@ -1,6 +1,8 @@
 // Package ex01_classify — Exercise 1: control flow + functions.
 package ex01_classify
-
+import (
+	"strconv"
+)
 // Classify returns:
 //   - "fizzbuzz" if n is divisible by both 3 and 5
 //   - "fizz"     if divisible by 3 only
@@ -14,5 +16,14 @@ package ex01_classify
 //
 // TODO: implement this. Right now it returns "" so the tests fail.
 func Classify(n int) string {
-	return ""
+
+	switch {
+		case n%3 == 0 && n%5 == 0: 
+			return "fizzbuzz"
+		case n%3 == 0:
+			return "fizz"
+		case n%5 == 0:
+			return "buzz"
+	}
+	return strconv.Itoa(n)
 }
