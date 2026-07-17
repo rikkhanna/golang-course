@@ -12,16 +12,16 @@ const greeting = "hello" // typed as string when used
 type Weekday int
 
 const (
-	Sunday Weekday = iota // 0
-	Monday                // 1
-	Tuesday               // 2
-) 
+	Sunday  Weekday = iota // 0
+	Monday                 // 1
+	Tuesday                // 2
+)
 
 func main() {
 	// --- Declaration styles ---
 	var explicit int = 10 // full form: keyword, name, type, value
-	var inferred = 20      // type inferred from the value (int)
-	short := 30            // short form: only inside functions; type inferred
+	var inferred = 20     // type inferred from the value (int)
+	short := 30           // short form: only inside functions; type inferred
 	fmt.Println(explicit, inferred, short)
 
 	// --- Zero values: variables declared without a value are NOT garbage ---
@@ -30,7 +30,7 @@ func main() {
 		f float64 // 0
 		b bool    // false
 		s string  // "" (empty, not nil)
-		p *int     // nil
+		p *int    // nil
 	)
 	fmt.Printf("zero values: i=%d f=%g b=%t s=%q p=%v\n", i, f, b, s, p)
 

@@ -20,9 +20,9 @@ func mutateViaPointer(p *point) {
 func main() {
 	// & takes the address; * dereferences. There is NO pointer arithmetic in Go.
 	x := 42
-	p := &x            // p is *int, points at x
+	p := &x                 // p is *int, points at x
 	fmt.Println("*p =", *p) // 42
-	*p = 7             // write through the pointer
+	*p = 7                  // write through the pointer
 	fmt.Println("x =", x)   // 7 — x changed via p
 
 	// --- Value vs pointer semantics ---

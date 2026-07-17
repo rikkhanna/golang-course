@@ -31,10 +31,10 @@ func TestWordCount(t *testing.T) {
 
 func TestFirstRune(t *testing.T) {
 	cases := []struct {
-		name    string
-		in      string
-		want    string
-		wantOK  bool
+		name   string
+		in     string
+		want   string
+		wantOK bool
 	}{
 		{"ascii", "hello", "h", true},
 		{"accented", "étage", "é", true},

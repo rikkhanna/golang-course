@@ -1,7 +1,6 @@
 // Package ex02_stats — Exercise 2: variadic functions + closures.
 package ex02_stats
 
-
 // MinMax returns the smallest and largest of the given ints, and ok=false if
 // no arguments were passed (in which case min and max should be 0).
 //
@@ -15,7 +14,7 @@ func MinMax(nums ...int) (min, max int, ok bool) {
 	}
 	min = nums[0]
 	max = nums[0]
-	
+
 	for _, num := range nums {
 		if num > max {
 			max = num
@@ -31,10 +30,11 @@ func MinMax(nums ...int) (min, max int, ok bool) {
 // one new number and returns the average of every number seen so far.
 //
 // Example:
-//   avg := RunningAverage()
-//   avg(10) // 10
-//   avg(20) // 15
-//   avg(30) // 20
+//
+//	avg := RunningAverage()
+//	avg(10) // 10
+//	avg(20) // 15
+//	avg(30) // 20
 //
 // Hint: capture a running sum and a count in variables declared in
 // RunningAverage; the returned func closes over them.

@@ -21,10 +21,10 @@ func Dedup(in []int) []int {
 	seen := map[int]struct{}{}
 	result := []int{}
 	for _, v := range in {
-	  if _, ok := seen[v]; !ok {
-		seen[v] = struct{}{}
-		result = append(result, v)
-	  }
+		if _, ok := seen[v]; !ok {
+			seen[v] = struct{}{}
+			result = append(result, v)
+		}
 	}
 	return result
 }

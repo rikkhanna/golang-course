@@ -6,7 +6,7 @@ func main() {
 	// --- Arrays: fixed size, size is PART of the type ---
 	// [3]int and [4]int are different, incompatible types. Arrays are VALUES:
 	// assigning or passing one copies all elements. You'll rarely use them directly.
-	var a [3]int          // [0 0 0]
+	var a [3]int // [0 0 0]
 	a[0] = 1
 	b := [...]int{5, 6, 7} // [...] lets the compiler count -> [3]int
 	fmt.Println("arrays:", a, b, len(b))

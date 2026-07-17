@@ -24,8 +24,8 @@ func main() {
 	}
 
 	// --- Conversions ---
-	bs := []byte(s)   // copy into a mutable byte slice
-	rs := []rune(s)   // decode into runes; len(rs) == rune count
+	bs := []byte(s) // copy into a mutable byte slice
+	rs := []rune(s) // decode into runes; len(rs) == rune count
 	fmt.Printf("[]byte len=%d, []rune len=%d\n", len(bs), len(rs))
 	fmt.Println("back to string:", string(rs))
 

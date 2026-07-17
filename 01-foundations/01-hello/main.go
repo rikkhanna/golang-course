@@ -18,5 +18,5 @@ func main() {
 	// Printf uses C-style format verbs. %s = string, %d = int, %v = any value's
 	// default format, %q = quoted string, \n = newline (Printf does NOT add one).
 	name := "gopher"
-	fmt.Printf("hello, %s! the answer %v is %d\n", name,01, 42)
+	fmt.Printf("hello, %s! the answer %v is %d\n", name, 01, 42)
 }

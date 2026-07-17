@@ -32,7 +32,7 @@ func main() {
 	fmt.Println("after delete:", ages)
 
 	// --- nil map: reading is fine, WRITING PANICS ---
-	var nm map[string]int // nil map (zero value)
+	var nm map[string]int                        // nil map (zero value)
 	fmt.Println("read nil map:", nm["anything"]) // 0, fine
 	// nm["x"] = 1 // <- would panic: "assignment to entry in nil map"
 	// Fix: nm = make(map[string]int) before writing.

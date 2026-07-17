@@ -1,9 +1,11 @@
 // Package ex02_wordcount — Exercise 2: maps + strings/runes.
 package ex02_wordcount
+
 import (
 	"strings"
 	"unicode/utf8"
 )
+
 // WordCount returns a map from each whitespace-separated word to how many times
 // it appears. Words are compared case-INSENSITIVELY ("Go" and "go" are the same
 // word, counted under the lowercase key "go").
@@ -44,7 +46,7 @@ func FirstRune(s string) (string, bool) {
 	if s == "" {
 		return "", false
 	}
-	
+
 	rune, size := utf8.DecodeRuneInString(s)
 	return string(rune), size > 0
 }
