@@ -19,9 +19,9 @@ gofmt -l .                          # list unformatted files (want: empty)
 
 | #  | Topic | Status |
 |----|-------|--------|
-| 01 | Foundations — toolchain, variables, types, control flow, functions | in progress |
-| 02 | Core data structures — arrays, slices, maps, strings, pointers | pending |
-| 03 | Error handling — errors, wrapping, panic/recover | pending |
+| 01 | Foundations — toolchain, variables, types, control flow, functions | ✅ done |
+| 02 | Core data structures — arrays, slices, maps, strings, pointers | ✅ done |
+| 03 | Error handling — errors, wrapping, panic/recover | ✅ done |
 | 04 | Structs, methods, interfaces | pending |
 | 05 | Concurrency — goroutines, channels, select, sync, race detector | pending |
 | 06 | Generics — type parameters, constraints | pending |
